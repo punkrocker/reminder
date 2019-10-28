@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo</title>
+    <script type="module" src="./node_modules/wired-checkbox/lib/wired-checkbox.js"></script>
 </head>
 <body>
-<ul>
-    <li><input type="checkbox" />Coffee</li>
-    <li><input type="checkbox" />Coffee</li>
-    <li><input type="checkbox" />Coffee</li>
-    <li><input type="checkbox" />Coffee</li>
-</ul>
+<wired-checkbox>Checkbox One</wired-checkbox>
+<wired-checkbox checked>Checkbox Two</wired-checkbox>
+<wired-checkbox disabled>Disabled checkbox</wired-checkbox>
+<wired-checkbox class="custom">Styled checkbox</wired-checkbox>
 </body>
 </html>
