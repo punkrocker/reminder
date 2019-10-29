@@ -25,6 +25,5 @@
     "typescript": "^3.6.0"
   },
   "dependencies": {
-    "wired-checkbox": "^2.0.0"
   }
 }
