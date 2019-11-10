@@ -25,5 +25,7 @@
     "typescript": "^3.6.0"
   },
   "dependencies": {
+    "@types/node-notifier": "^5.4.0",
+    "node-notifier": "^6.0.0"
   }
 }
