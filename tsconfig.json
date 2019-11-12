@@ -5,10 +5,14 @@
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
+    "target": "es6",
+    "outFile": "Content/app.js",
+    "jsx": "react",
     "paths": {
       "*": ["node_modules/*"]
     }
   },
+  "compileOnSave": true,
   "include": [
     "src/**/*"
   ]
