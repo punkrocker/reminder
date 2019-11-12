@@ -6,7 +6,6 @@
     "outDir": "dist",
     "baseUrl": ".",
     "target": "es6",
-    "outFile": "Content/app.js",
     "jsx": "react",
     "paths": {
       "*": ["node_modules/*"]
