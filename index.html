@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>喝水提醒小助手</title>
+    <title>title</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,8 @@
 
 <body>
 <div>
+    <div id="root" style="height: 100px; width: 100px">
+    </div>
     <ul style="list-style-type:none">
         <li><wired-checkbox>10:00</wired-checkbox></li>
         <li><wired-checkbox>11:30</wired-checkbox></li>
@@ -20,13 +22,10 @@
         <li><wired-checkbox>16:00</wired-checkbox></li>
         <li><wired-checkbox>17:30</wired-checkbox></li>
     </ul>
+    <wired-button>Hello</wired-button>
 </div>
 
-<script>
-    const nameInput = document.querySelector('wired-input');
-    document.querySelector('wired-button').addEventListener('click', () => {
-        window.alert(`Hello ${nameInput.value}!`);
-    });
+<script src="./public/bundle.js">
 </script>
 </body>
 
