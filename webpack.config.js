@@ -4,5 +4,10 @@ module.exports = {
         path: __dirname + "/public", //打包后文件的存放路径
         filename: "bundle.js" //打包后文件的名称
     },
-    mode: "development"
+    mode: "development",
+    module: {
+        rules: [
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+        ]
+    }
 }
