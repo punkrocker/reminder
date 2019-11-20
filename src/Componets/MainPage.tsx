@@ -1,8 +1,9 @@
 import * as React from "react";
-import {Component} from "react";
 
-export default class MainPage extends Component<any> {
+export default class MainPage extends React.Component {
     public render() {
-        return <h1>hello world</h1>;
+        return (
+            <h1>hello</h1>
+        );
     }
 }
