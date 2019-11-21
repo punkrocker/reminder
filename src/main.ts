@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
+import * as index from "./index";
 
 let mainWindow: Electron.BrowserWindow;
 
@@ -14,6 +15,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
+  // mainWindow.loadURL("http://localhost:3000");
   mainWindow.loadFile(path.join(__dirname, "../index.html"));
   mainWindow.removeMenu();
 

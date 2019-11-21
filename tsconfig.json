@@ -6,7 +6,7 @@
     "sourceMap": true,
     "outDir": "public",
     "baseUrl": ".",
-    "target": "es6",
+    "target": "es2016",
     "jsx": "react",
     "paths": {
       "*": ["node_modules/*"]

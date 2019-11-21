@@ -1,21 +1,34 @@
 module.exports = {
-    entry: __dirname + "/src/renderer.tsx", //唯一入口文件
+    entry: "./src/index.tsx",
     output: {
-        path: __dirname + "/public", //打包后文件的存放路径
-        filename: "bundle.js" //打包后文件的名称
+        filename: "bundle.js",
+        path: __dirname + "/public"
     },
+
+    // Enable sourcemaps for debugging webpack's output.
+    devtool: "source-map",
+
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        modules: ['node_modules']
+        // Add '.ts' and '.tsx' as resolvable extensions.
+        extensions: [".ts", ".tsx", ".js", ".json"]
     },
     mode: "development",
     module: {
         rules: [
-            {
-                test: /\.(js|jsx|tsx|ts)$/,
-                loader: "awesome-typescript-loader",
-                exclude: /node_modules/,
-            },
+            // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
+    },
+
+    // When importing a module whose path matches one of the following, just
+    // assume a corresponding global variable exists and use that instead.
+    // This is important because it allows us to avoid bundling all of our
+    // dependencies, which allows browsers to cache those libraries between builds.
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM"
     }
-}
+};
