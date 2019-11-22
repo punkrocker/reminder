@@ -36,6 +36,8 @@
     "@types/react-router-dom": "^5.1.2",
     "node-notifier": "^6.0.0",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-web-component": "^2.0.1",
+    "react-wired-element": "^0.8.1"
   }
 }
