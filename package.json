@@ -38,7 +38,7 @@
     "child_process": "^1.0.2",
     "fs": "0.0.1-security",
     "net": "^1.0.2",
-    "node-notifier": "^6.0.0",
+    "node-notifier": "^8.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-web-component": "^2.0.1",
