@@ -7,7 +7,7 @@ let mainWindow: Electron.BrowserWindow;
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    height: 250,
+    height: 720,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
