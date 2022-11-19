@@ -28,7 +28,7 @@
     "tslint": "^5.19.0",
     "typescript": "^3.6.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@types/node-notifier": "^5.4.0",
